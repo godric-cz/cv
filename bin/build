@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use Symfony\Component\Yaml\Yaml;
+
+echo "Hello world\n";
+
+print_r(Yaml::parseFile(__DIR__ . '/../cv.yaml'));
