@@ -12,9 +12,9 @@
             <img src="foto.jpg">
         </div>
 
-        <div class="title">Martin Hanzl</div>
+        <div class="title">{$name}</div>
         <div class="subtitle">
-            ?. ?. 1987
+            {$birthDate}
             <div class="separator"></div>
             Senior developer
         </div>
@@ -27,11 +27,19 @@
 
         <h2>Pracovní zkušenosti</h2>
 
-        <div class="exp">
-            <div class="exp_period">2019&ndash;2019</div>
-            <div class="exp_title">Programátor Python a PHP</div>
-            <div class="exp_subtitle">SMART Comp., a.s. (Netbox)</div>
-            <div class="exp_description">Python/Django, PHP, PL/pgSQL, Linux, Docker + Gitlab, síťová infrastruktura</div>
+        <div class="exp" n:foreach="$jobs as $job">
+            <div class="exp_period">{$job[period]|replace:' - ','–'}</div>
+            <div class="exp_title">{$job[position]}</div>
+            <div class="exp_subtitle">{$job[employer]}</div>
+            <div class="exp_description">{$job[description]}</div>
+        </div>
+
+        <h2>Vzdělání</h2>
+
+        <div class="exp" n:foreach="$educationSet as $education">
+            <div class="exp_period">{$education[period]|replace:' - ','–'}</div>
+            <div class="exp_title">{$education[title]}</div>
+            <div class="exp_subtitle">{$education[school]}</div>
         </div>
     </div>
 
@@ -39,16 +47,23 @@
         <h2>Kontakt</h2>
 
         <table class="style">
-            <tr><td><b>A:&emsp;</b></td><td>???</td></tr>
-            <tr><td><b>T:</b></td><td>??? ??? ???</td></tr>
-            <tr><td><b>M:</b></td><td>hanzl.martin@gmail.com</td></tr>
+            <tr><td><b>A:&emsp;</b></td><td>{$address}</td></tr>
+            <tr><td><b>T:</b></td><td>{$phone}</td></tr>
+            <tr><td><b>M:</b></td><td>{$email}</td></tr>
         </table>
 
         <h2>Dovednosti</h2>
 
-        <div class="skill">
-            <div class="skill_title">Linux</div>
-            <div class="skill_description">webservery, související protokoly, databáze a základní správa Donec dignissim tincidunt nisl vel blandit. Nulla eros augue.</div>
+        <div class="skill" n:foreach="$skills as $title => $description">
+            <div class="skill_title">{$title}</div>
+            <div class="skill_description">{$description}</div>
+        </div>
+
+        <h2>Jazyky</h2>
+
+        <div class="skill" n:foreach="$languages as $language => $level">
+            <div class="skill_title">{$language}</div>
+            <div class="skill_description">{$level}</div>
         </div>
     </div>
 

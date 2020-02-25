@@ -4,22 +4,16 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 use Symfony\Component\Yaml\Yaml;
 
-$data = Yaml::parseFile(__DIR__ . '/../cv.yaml');
-
-// add sensitive data
-$dataSensitive = Yaml::parseFile(__DIR__ . '/../cv-sensitive.yaml');
-$data['Osobní informace'] = array_merge(
-    $data['Osobní informace'],
-    $dataSensitive['Osobní informace']
+// load data
+$data = array_merge(
+    Yaml::parseFile(__DIR__ . '/../cv.yaml'),
+    Yaml::parseFile(__DIR__ . '/../cv-sensitive.yaml') // TODO catch
 );
-
-// normalize personal info data structure
-$data['Osobní informace'] = [$data['Osobní informace']];
 
 // load template
 $latte = new Latte\Engine;
 $template = __DIR__ . '/../template/cv.latte';
-$parameters = ['data' => $data];
+$parameters = $data;
 
 if (PHP_SAPI == 'cli') {
     // commandline buid

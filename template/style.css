@@ -78,6 +78,7 @@ h1, h2, h3, h4 {
 }
 
 h2 {
+    margin-top: 2em;
     margin-bottom: 1em;
 }
 
@@ -90,14 +91,14 @@ h2::before {
     float: left;
     margin-left: 15mm;
     width: 107mm;
-    margin-top: 15mm;
+    margin-top: 10mm;
 }
 
 .rightcolumn {
     float: left;
     margin-left: 15mm;
     width: 60mm;
-    margin-top: 15mm;
+    margin-top: 10mm;
 }
 
 table.style {
@@ -110,6 +111,7 @@ table.style td {
 
 .exp {
     padding-left: 28mm;
+    margin-bottom: 1.5em;
 }
 
 .exp_period {
@@ -120,17 +122,21 @@ table.style td {
 .exp_title {
     font-family: Space Mono Bold;
     color: #005746;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 .exp_subtitle {
     color: #00987a;
     font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.skill {
     margin-bottom: 1em;
 }
 
 .skill_title {
     font-family: Space Mono Bold;
     color: #005746;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }

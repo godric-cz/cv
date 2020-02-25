@@ -1,3 +1,5 @@
 /_*
 /bin/composer
 /vendor
+/cv-sensitive.yaml
+/cv.pdf

@@ -1,43 +1,41 @@
-Osobní informace:
-    Jméno: Martin Hanzl
-    Titul: Ing.
-    Adresa:
-    Telefon:
-    E-mail: hanzl.martin@gmail.com
-    Datum narození:
+name: Martin Hanzl
+birthDate: 1987
+address:
+phone:
+email: hanzl.martin@gmail.com
 
-Praxe:
-    -   Období: 2013 - 2019
-        Zaměstnavatel: SMART Comp., a.s. (Netbox)
-        Pozice: Programátor Python a PHP
-        Technologie: [Python/Django, PHP, PL/pgSQL, Linux, Docker + Gitlab, síťová infrastruktura]
-    -   Období: 2015 - 2016
-        Zaměstnavatel: Trickster Arts s.r.o
-        Pozice: Programátor PHP
-        Technologie: [Google App Engine, správa cloud infrastruktury, na výkon citlivé MySQL]
-    -   Období: 2010 - 2013
-        Zaměstnavatel: SMART Comp., a.s. (Netbox)
-        Pozice: Junior operátor dohledu sítě
-        Technologie: [síťová infrastruktura, SNMP nástroje]
+jobs:
+    -   period: 2013 - 2019
+        employer: SMART Comp., a.s. (Netbox)
+        position: Programátor Python a PHP
+        description: Python/Django, PHP, PL/pgSQL, Linux, Docker + Gitlab, síťová infrastruktura
+    -   period: 2015 - 2016
+        employer: Trickster Arts s.r.o
+        position: Programátor PHP
+        description: Google App Engine, správa cloud infrastruktury, na výkon citlivé MySQL
+    -   period: 2010 - 2013
+        employer: SMART Comp., a.s. (Netbox)
+        position: Junior operátor dohledu sítě
+        description: síťová infrastruktura, SNMP nástroje
 
-Vzdělání:
-    -   Dosažené vzdělání: Inženýr v oboru Bioinformatika a biocomputing
-        Období: 2015-2018
-        Škola: Fakulta informačních technologií VUT v Brně
-    -   Předchozí studium: Bakalář v oboru Informační technologie
-        Období: 2007-2012
-        Škola: Fakulta informačních technologií VUT v Brně
-    -   Předchozí studium: středoškolské s maturitou
-        Období: 2002 - 2007
-        Škola:  Gymnázium Brno, třída Kapitána Jaroše 14
+educationSet:
+    -   period: 2015 - 2018
+        title: ING Bioinformatika a biocomputing
+        school: Fakulta informačních technologií VUT v Brně
+    -   period: 2007 - 2012
+        title: BC Informační technologie
+        school: Fakulta informačních technologií VUT v Brně
+    -   period: 2002 - 2007
+        title: Středoškolské s maturitou
+        school:  Gymnázium Brno, třída Kapitána Jaroše 14
 
-Dovednosti:
-    -   Jazyk: Angličtina
-        Úroveň: Pokročilý (B2)
-    -   Jazyk: Němčina
-        Úroveň: Mírně pokročilý
-    -   Odborné dovednosti:
-        - Linux (webservery, související protokoly, databáze a základní správa)
-        - Webové technologie (krom backendu i základní orientace v Reactu, Angularu a node.js devstacku)
-        - Další jazyky (základní přehled): Java (několik školních projektů), C a C++ (víc projektů, diplomka přispívání do větší C++ code base pro numerické výpočty a spolupráce s knihovnou Numpy - k-wave.org)
-        - Síťové technologie (rozsah odpovídá zhruba kurzu CCNA1 a 2)
+skills:
+    Linux: webservery, související protokoly, databáze a základní správa
+    Webové technologie: krom backendu i základní orientace v Reactu a node.js devstacku
+    Java: několik školních projektů
+    C a C++: víc projektů, diplomka přispívání do větší C++ code base pro numerické výpočty a spolupráce s knihovnou Numpy - k-wave.org
+    Síťové technologie: rozsah odpovídá zhruba kurzu CCNA1 a 2
+
+languages:
+    Angličtina: Pokročilý (B2)
+    Němčina: Mírně pokročilý
