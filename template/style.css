@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Space Mono Bold';
+    src: url('SpaceMono-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('WorkSans-Regular.ttf');
+}
+
+@media screen {
+    html {
+        background-color: #888;
+        overflow-y: scroll;
+    }
+    body {
+        background-color: #fff;
+        width: 210mm;
+        margin: 18px auto !important;
+        box-shadow: 0 0 5px #000;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: Work Sans;
+    font-size: 9pt;
+    line-height: 1.5;
+}
+
+.head {
+    background-color: #e7f2f0;
+    overflow: hidden;
+}
+
+.foto {
+    margin: 9mm 10mm 9mm 15mm;
+    width: 30mm;
+    height: 30mm;
+    border-radius: 40mm;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    float: left;
+}
+
+.foto > img {
+    height: 100%;
+    display: inline-block;
+}
+
+.title {
+    padding-top: 15mm;
+    color: #005746;
+    font-family: Space Mono Bold;
+    font-size: 18pt;
+    letter-spacing: 0.3mm;
+}
+
+.subtitle {
+    margin-top: 2mm;
+}
+
+.separator {
+    display: inline;
+    color: #00987a;
+    font-family: Space Mono Bold;
+    margin: 0 0.5em;
+}
+
+.separator::before {
+    content: '//';
+}
+
+h1, h2, h3, h4 {
+    font-family: Space Mono Bold;
+    color: #005746;
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+
+h2::before {
+    content: '// ';
+    color: #00987a;
+}
+
+.maincolumn {
+    float: left;
+    margin-left: 15mm;
+    width: 107mm;
+    margin-top: 15mm;
+}
+
+.rightcolumn {
+    float: left;
+    margin-left: 15mm;
+    width: 60mm;
+    margin-top: 15mm;
+}
+
+table.style {
+    border-collapse: collapse; /* necessary for line height preservation */
+}
+
+table.style td {
+    padding: 0;
+}
+
+.exp {
+    padding-left: 28mm;
+}
+
+.exp_period {
+    position: absolute;
+    margin-left: -28mm;
+}
+
+.exp_title {
+    font-family: Space Mono Bold;
+    color: #005746;
+    margin-bottom: 1em;
+}
+
+.exp_subtitle {
+    color: #00987a;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.skill_title {
+    font-family: Space Mono Bold;
+    color: #005746;
+    margin-bottom: 1em;
+}
