@@ -35,7 +35,7 @@ body {
 }
 
 .foto {
-    margin: 9mm 10mm 9mm 15mm;
+    margin: 8mm 10mm 8mm 15mm;
     width: 30mm;
     height: 30mm;
     border-radius: 40mm;
@@ -79,7 +79,7 @@ h1, h2, h3, h4 {
 }
 
 h2 {
-    margin-top: 2em;
+    margin-top: 3em;
     margin-bottom: 1em;
 }
 
@@ -92,14 +92,14 @@ h2::before {
     float: left;
     margin-left: 15mm;
     width: 107mm;
-    margin-top: 10mm;
+    margin-top: 5mm;
 }
 
 .rightcolumn {
     float: left;
     margin-left: 15mm;
-    width: 60mm;
-    margin-top: 10mm;
+    width: 58mm;
+    margin-top: 5mm;
 }
 
 table.style {
@@ -111,8 +111,8 @@ table.style td {
 }
 
 .exp {
-    padding-left: 28mm;
-    margin-bottom: 1.5em;
+    padding-left: 30mm;
+    margin-bottom: 2em;
 }
 
 .exp_period {
@@ -123,17 +123,17 @@ table.style td {
 .exp_title {
     font-family: Space Mono Bold;
     color: #005746;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.8em;
 }
 
 .exp_subtitle {
     color: #00987a;
     font-weight: bold;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.8em;
 }
 
 .skill {
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 }
 
 .skill_title {
