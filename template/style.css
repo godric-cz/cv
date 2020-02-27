@@ -16,6 +16,7 @@
     body {
         background-color: #fff;
         width: 210mm;
+        height: 297mm;
         margin: 18px auto !important;
         box-shadow: 0 0 5px #000;
     }
