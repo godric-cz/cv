@@ -2,13 +2,18 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
+use Symfony\Component\Yaml\Exception\ParseException;
 use Symfony\Component\Yaml\Yaml;
 
 // load data
-$data = array_merge(
-    Yaml::parseFile(__DIR__ . '/../cv.yaml'),
-    Yaml::parseFile(__DIR__ . '/../cv-sensitive.yaml') // TODO catch
-);
+$dataPublic = Yaml::parseFile(__DIR__ . '/../cv.yaml');
+$dataSensitive = [];
+try {
+    $dataSensitive = Yaml::parseFile(__DIR__ . '/../cv-sensitive.yaml');
+} catch (ParseException $e) {
+}
+
+$data = array_merge($dataPublic, $dataSensitive);
 
 // load template
 $latte = new Latte\Engine;
