@@ -34,7 +34,7 @@ body {
     overflow: hidden;
 }
 
-.foto {
+.photo {
     margin: 8mm 10mm 8mm 15mm;
     width: 30mm;
     height: 30mm;
@@ -45,7 +45,7 @@ body {
     float: left;
 }
 
-.foto > img {
+.photo > img {
     height: 100%;
     display: inline-block;
 }
