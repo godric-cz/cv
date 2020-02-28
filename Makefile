@@ -1,5 +1,5 @@
 
-.PHONY: all cv.pdf preview watch
+.PHONY: all cv.pdf serve watch
 
 all: cv.pdf
 
@@ -19,5 +19,5 @@ serve: vendor/autoload.php
 	php -S localhost:8000
 
 # regenerate pdf on input file changes
-watch:
+watch: vendor/autoload.php
 	while true; do php bin/build.php; inotifywait -e close_write template/* bin/build.php; done
