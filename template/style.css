@@ -34,6 +34,13 @@ body {
     overflow: hidden;
 }
 
+.head i {
+    font-style: normal;
+    color: #00987a;
+    margin: 0 0.1em;
+    font-weight: bold;
+}
+
 .photo {
     margin: 8mm 10mm 8mm 15mm;
     width: 30mm;
